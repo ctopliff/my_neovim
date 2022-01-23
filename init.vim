@@ -56,6 +56,8 @@ call plug#end()
 
 """ Functionality - AutoPep8 on 'gq' in vim
 au FileType python setlocal formatprg=autopep8\ -
+let g:autopep8_disable_show_diff=1
+
 
 """venshell/vim-pydocstring Main Configurations
 filetype plugin indent on
@@ -98,7 +100,7 @@ syntax on
 color dracula
 
 " Enable True Color Support (ensure you're using a 256-color enabled $TERM, e.g. xterm-256color)
-set termguicolors
+"set termguicolors
 
 """ Plugin Configurations
 
