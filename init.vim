@@ -24,6 +24,7 @@ Plug 'chriskempson/tomorrow-theme', { 'rtp': 'vim' }
 Plug 'rhysd/vim-color-spring-night'
 
 " Functionalities
+Plug 'tell-k/vim-autopep8'
 Plug 'tpope/vim-fugitive' " Git inside of vim
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
@@ -53,6 +54,8 @@ Plug 'wellle/context.vim'
 
 call plug#end()
 
+""" Functionality - AutoPep8 on 'gq' in vim
+au FileType python setlocal formatprg=autopep8\ -
 
 """venshell/vim-pydocstring Main Configurations
 filetype plugin indent on
